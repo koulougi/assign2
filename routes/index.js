@@ -23,12 +23,12 @@ router.get('/project', function(req, res, next) {
 
 /* GET services page. */
 router.get('/services', function(req, res, next) {
-  res.render('index', { title: "Services" });
+  res.render('services', { title: "Services" });
 });
 
 /* GET contact page. */
 router.get('/contact', function(req, res, next) {
-  res.render('index', { title: "Contact" });
+  res.render('contact', { title: "Contact" });
 });
 
 module.exports = router;
