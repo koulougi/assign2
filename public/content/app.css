@@ -13,3 +13,10 @@ body {
     max-width: 100%;
     height: auto;
 }
+
+#contactForm {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+
+}
