@@ -11,7 +11,12 @@ Date: 2022-09-20
     window.addEventListener("load", Start);
 })();
 
-
-function formConfirm() {
-    alert("Message Sent!");
+ // stores information from form in variables
+function formStoreInfo() {
+   let email = document.getElementById('inputEmail3').value;
+   let fName = document.getElementById('inputName').value;
+   let lName = document.getElementById('inputLName').value;
+   let pNum = document.getElementById('pNum').value;
+   //console.log tests to see if storing is functional
+   console.log(email, fName, lName, pNum);
 }
