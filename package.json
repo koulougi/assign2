@@ -34,7 +34,7 @@
   "main": "server.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/koulougi/ckoulwebdev.git"
+    "url": "git+https://github.com/koulougi/assign2.git"
   },
   "author": "Christopher Koulougliotis",
   "license": "ISC",
