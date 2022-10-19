@@ -1,0 +1,44 @@
+<%- include ../partials/header.ejs %>
+
+
+<main class="container">
+    <!-- msg area-->
+    <% if(messages.length > 0) {%>
+        <div class="alert alert-danger">
+            <%= messages %>
+        </div>
+    <% } %>
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Please Login </h1>
+            <form method="POST" autocomplete="off">
+
+                <fieldset class="form-group">
+                    <label for="username">Username: </label>
+                    <input type="text" class="form-control" name="username"
+                           placeholder="Enter Username" id="username" required autofocus>
+                </fieldset>
+
+                <fieldset class="form-group">
+                    <label for="password">Password: </label>
+                    <input type="text" class="form-control" name="password"
+                           placeholder="Enter password" id="password" required autofocus>
+                    or
+                    <a href="/register">Register Here</a>
+                </fieldset>
+
+                <fieldset class="form-group text-right">
+                    <input type="submit" class="btn btn-success" value="Login">
+                    <a href="/user_collect">
+                        <input type="button" class="btn btn-warning" value="Cancel">
+                    </a>
+                </fieldset>
+            </form>
+
+</main>
+
+
+
+<%- include ../partials/bottomNav.ejs %>
+
+<%- include ../partials/footer.ejs %>

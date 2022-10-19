@@ -18,6 +18,7 @@
     "debug": "~2.6.9",
     "ejs": "~2.6.1",
     "express": "~4.16.1",
+    "express-session": "^1.17.3",
     "http-errors": "~1.6.3",
     "jqeury": "^0.0.1-security",
     "jquery": "^3.6.1",
@@ -40,5 +41,14 @@
   "bugs": {
     "url": "https://github.com/koulougi/ckoul.301227384.portfolio/issues"
   },
-  "homepage": "https://github.com/koulougi/ckoul.301227384.portfolio#readme"
+  "homepage": "https://github.com/koulougi/ckoul.301227384.portfolio#readme",
+  "devDependencies": {
+    "@types/connect-flash": "^0.0.37",
+    "@types/express": "^4.17.14",
+    "@types/express-session": "^1.17.5",
+    "@types/mongoose": "^5.11.97",
+    "@types/passport": "^1.0.11",
+    "@types/passport-local": "^1.0.34",
+    "@types/passport-local-mongoose": "^6.1.1"
+  }
 }
