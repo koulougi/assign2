@@ -14,13 +14,13 @@ module.exports.displayUserList = (req, res, next) =>{
         else{
             //console.log(BookList);
 
-            res.render('user/list', {title: 'Users', UserList: UserList});
+            res.render('user/list', {title: 'Users', UserList: UserList, displayName : req.user ? req.user.displayName : ''});
         }
     });
 }
 
 module.exports.displayAddPage = (req, res, next) =>{
-    res.render('user/add', {title: 'Add User'});
+    res.render('user/add', {title: 'Add User', displayName : req.user ? req.user.displayName : ''});
 }
 
 module.exports.processAddPage = (req, res, next) =>{
@@ -53,7 +53,7 @@ module.exports.displayEditPage = (req, res, next) =>{
         }
         else
         {
-            res.render('user/edit', {title: 'Edit User', user: userEdit})
+            res.render('user/edit', {title: 'Edit User', user: userEdit, displayName : req.user ? req.user.displayName : '' })
         }
     });
 }
