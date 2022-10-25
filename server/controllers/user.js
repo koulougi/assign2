@@ -16,7 +16,7 @@ module.exports.displayUserList = (req, res, next) =>{
 
             res.render('user/list', {title: 'Users', UserList: UserList, displayName : req.user ? req.user.displayName : ''});
         }
-    });
+    }) .sort({ name: 1 });
 }
 
 module.exports.displayAddPage = (req, res, next) =>{
